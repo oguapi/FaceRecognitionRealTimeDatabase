@@ -3,9 +3,9 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("path/to/serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': "https://faceattendacerealtime-cf1e2-default-rtdb.firebaseio.com/"
+    'databaseURL': "https://directionRealTimeDataBase/"
 })
 
 ref= db.reference('Students') #The referent where we include the information of students inside database
