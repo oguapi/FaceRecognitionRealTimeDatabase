@@ -9,10 +9,10 @@ from firebase_admin import credentials
 from firebase_admin import db
 from firebase_admin import storage
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("path/to/serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': "https://faceattendacerealtime-cf1e2-default-rtdb.firebaseio.com/",
-    'storageBucket': "faceattendacerealtime-cf1e2.appspot.com"
+    'databaseURL': "https://directionRealTimeDataBase/",
+    'storageBucket': "storageDirection"
 })
 
 ##Encoding Generator
